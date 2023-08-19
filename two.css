@@ -1,0 +1,247 @@
+*
+{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Hanken Grotesk;
+     text-align: center;
+     /* width:100vh; */
+     height: 100vh;
+}
+section
+{
+     display: grid;
+     grid-template-columns: repeat(2,50%);
+     box-shadow: 2px 2px 20px 2px rgb(212, 209, 209);
+     /* width: 50vh;     */
+     height: 60vh; 
+     background-color:  hsl(0, 0%, 100%);
+     border-radius: 2em;
+    
+}
+.result
+{
+   grid-column: auto;
+   background-image: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   padding: 10%;
+   color:  hsl(0, 0%, 100%);
+   /* border-radius: 50px; */
+   border-radius: 2em;
+   height: 60vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+h3
+{
+     text-transform: capitalize;
+     margin-bottom: 18%; 
+     color:hsla(222, 100%, 96%, 0.842);
+}
+#result
+{
+     background-image: linear-gradient(to bottom ,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+     border-radius: 50%;
+     text-align:center;
+     width: 180px;
+     height: 180px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: -7%;
+}
+#result h1
+{
+     text-transform: capitalize;
+     font-size: 70px;
+     display: inline-block;
+}
+#result h5{
+     color: hsla(222, 100%, 96%, 0.842);
+     display: inline-block;
+}
+h1
+{
+     text-transform: capitalize;
+     margin: 8%;
+}
+p
+{
+     font-size: 18px;
+     color:hsla(222, 100%, 96%, 0.842);
+}
+.summary
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     row-gap: 3%;
+}
+.h
+{
+     text-align: left;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     width: 80%; 
+     text-transform: capitalize;
+     color: hsl(224, 30%, 27%);
+}
+.reaction
+{
+     background-color: hsla(0, 100%, 67%, 0.096);
+     width: 80%;
+     height: 11%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     border-radius: 13px;
+     padding: 3%;
+
+}
+.reaction > div
+{
+     display: inline-block;
+}
+img + h4
+{
+     display: inline-block;
+     color:hsl(0, 100%, 67%);
+
+}
+div h4{
+     display: inline-block;
+}
+img
+{
+     margin-right: 8%;
+     margin-right: 7%;
+}
+.hundred{
+     color: hsl(241, 100%, 89%);
+}
+#j
+{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.Memory
+{
+     background-color: hsla(39, 100%, 56%, 0.11);
+     width: 80%;
+     height: 11%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     padding: 3%;  
+     border-radius: 13px;
+}
+.Verbal
+{
+     background-color: hsla(166, 100%, 37%, 0.075);
+     width: 80%;
+     height: 11%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     padding: 3%;  
+     border-radius: 13px;
+
+}
+.vis
+{
+     background-color: hsla(234, 85%, 45%, 0.048);
+     width: 80%;
+     height: 11%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     padding: 3%;  
+     border-radius: 13px;
+
+}
+#a
+{
+     color: hsl(39, 100%, 56%);
+}
+#b
+{
+     color: hsl(166, 100%, 37%);
+}
+#c{
+     color:  hsl(234, 85%, 45%);
+}
+button
+{
+     width: 80%;
+     height: 10%;
+     background-color: hsl(224, 30%, 27%);
+     color: hsl(0, 0%, 100%);
+     border: none;
+     outline: none;
+     border-radius: 30px;
+     margin: 5%;
+}
+button:hover
+{
+     cursor:grabbing;
+}
+@media (max-width:600px) {
+     section{
+          grid-template-rows: repeat(2,50%);
+          grid-template-columns: none;
+          height: 100%;
+     }
+     .result{
+          grid-row: auto;
+          height: 95%;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+     }
+     #result
+     {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          padding: 0;
+     
+     }
+     #result h1{
+          font-size: 80px;
+     }
+     h5{
+          transform: translateY(-10px);
+     }
+     .reaction{
+          height: 15%;
+     }
+     .Memory
+     {
+          height: 15%;
+     }
+     .Verbal
+     {
+          height: 15%;
+     }
+     .vis{
+          height: 15%;
+     }
+     button{
+          height: 15%;
+          font-size: 15px;
+     }
+}
